@@ -1,0 +1,99 @@
+/* Stile generale */
+body {
+  background-color: #f4f6f8;
+  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
+.navbar-brand {
+  letter-spacing: 0.3px;
+}
+
+.nav-link {
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: rgba(255, 255, 255, 0.14);
+}
+
+/* Home */
+.hero-section {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.photo-placeholder {
+  min-height: 420px;
+  border: 3px dashed #adb5bd;
+  border-radius: 1.5rem;
+  background-color: #e9ecef;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Pagine interne */
+.page-section {
+  padding: 4rem 0;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.75rem;
+}
+
+.section-subtitle {
+  max-width: 850px;
+  color: #6c757d;
+  margin-bottom: 2rem;
+  font-size: 1.05rem;
+}
+
+.content-card {
+  border: none;
+  border-radius: 1.25rem;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+  margin-bottom: 1.5rem;
+}
+
+.content-card h2 {
+  font-size: 1.45rem;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.placeholder-text {
+  border-left: 4px solid #212529;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  color: #6c757d;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 3rem 0;
+  }
+
+  .photo-placeholder {
+    min-height: 300px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
